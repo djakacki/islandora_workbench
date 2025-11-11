@@ -1,0 +1,23 @@
+task: create
+host: "https://leaf.bucknell.edu/"
+username: admin
+password: f8bcae58ad
+input_dir: input_data/bridges
+input_csv: bridges_metadata.csv
+output_dir: output/
+output_csv: bridges_metadata_output.csv.output
+content_type: islandora_object
+# use the node_id to override id field requirement https://mjordan.github.io/islandora_workbench_docs/fields/
+ignore_csv_columns: ['created']
+allow_adding_terms: false
+allow_missing_files: false
+enable_http_cache: false
+timestamp_rollback: true
+subdelimiter: "^|.|^"
+log_response_body: false
+standalone_media_url: true
+
+
+# https://mjordan.github.io/islandora_workbench_docs/media_types/
+# media_types_override:
+#  - document: ['xml', 'pdf', 'doc', 'docx', 'ppt', 'pptx']
