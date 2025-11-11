@@ -1,0 +1,6 @@
+task: create_terms
+host: https://leaf.bucknell.edu
+username: Diane Jakacki
+password: BearDog2015!
+input_csv: uchs/uchs_terms.csv
+vocab_id: subject
